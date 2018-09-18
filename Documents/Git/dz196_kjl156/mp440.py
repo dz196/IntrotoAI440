@@ -38,9 +38,9 @@ Guessing a number
 '''
 def guess_unlimited(n, is_this_it):
     # The code here is only for illustrating how is_this_it() may be used 
-    guess = n/2 
-    if is_this_it(guess) == True:
-        return guess
+    for guess in range(1, n+1):
+        if is_this_it(guess) == True:
+            return guess
     return -1
         
 '''
