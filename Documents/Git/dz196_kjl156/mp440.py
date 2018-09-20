@@ -1,4 +1,4 @@
-
+import math
 '''
 GCD algorithm
 '''
@@ -49,6 +49,23 @@ Guessing a number where you can only make two guesses that are larger
 def guess_limited(n, is_this_smaller):
     
     guess = sqrt(n)
+    #Loop through increments of sqrt(n) to find the section of sqrt(n) numbers on which x is located
+    while (guess <= n):
+        if (is_this_smaller(guess) == False):
+            break;
+        guess += sqrt(n)
+
+    lower_bound = guess - sqrt(n)
+    upper_bound = guess
+
+    if (guess >= n):
+        upper_bound = n
+
+    for guess in range(lower_bound + 1, upper_bound):
+        if (is_this_smaller(guess) == False):
+            return guess
+            
+    return upper_bound
 
 
     return -1
