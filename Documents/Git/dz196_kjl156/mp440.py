@@ -47,6 +47,10 @@ def guess_unlimited(n, is_this_it):
 Guessing a number where you can only make two guesses that are larger
 '''
 def guess_limited(n, is_this_smaller):
+    
+    guess = sqrt(n)
+
+
     return -1
         
 '''

@@ -29,3 +29,5 @@ class TestRubiks(unittest.TestCase):
         self.assertRaises(TypeError, rubiks, True)
         self.assertRaises(TypeError, rubiks, "Rubiks")
         self.assertRaises(TypeError, rubiks, "1")
+if __name__ == '__main__':
+    unittest.main()
