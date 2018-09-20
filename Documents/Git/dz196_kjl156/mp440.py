@@ -48,14 +48,15 @@ Guessing a number where you can only make two guesses that are larger
 '''
 def guess_limited(n, is_this_smaller):
     
-    guess = sqrt(n)
+    square_root = math.sqrt(n)
+    guess = square_root
     #Loop through increments of sqrt(n) to find the section of sqrt(n) numbers on which x is located
     while (guess <= n):
         if (is_this_smaller(guess) == False):
             break;
-        guess += sqrt(n)
+        guess += square_root
 
-    lower_bound = guess - sqrt(n)
+    lower_bound = guess - square_root
     upper_bound = guess
 
     if (guess >= n):
@@ -64,7 +65,7 @@ def guess_limited(n, is_this_smaller):
     for guess in range(lower_bound + 1, upper_bound):
         if (is_this_smaller(guess) == False):
             return guess
-            
+
     return upper_bound
 
 
