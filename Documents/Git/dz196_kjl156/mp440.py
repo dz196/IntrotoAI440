@@ -1,4 +1,3 @@
-import math
 '''
 GCD algorithm
 '''
@@ -48,7 +47,7 @@ Guessing a number where you can only make two guesses that are larger
 '''
 def guess_limited(n, is_this_smaller):
     
-    square_root = math.sqrt(n)
+    square_root = (int)(n**.5)
     guess = square_root
     #Loop through increments of sqrt(n) to find the section of sqrt(n) numbers on which x is located
     while (guess <= n):
