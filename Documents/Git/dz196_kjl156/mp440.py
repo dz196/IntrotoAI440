@@ -75,7 +75,33 @@ def guess_limited(n, is_this_smaller):
 Guessing a number, bonus problem
 '''
 def guess_limited_plus(n, is_this_smaller):
-    return -1
+    update_values = lambda x,y,z: 
+
+    beginning = 1
+    end = n
+    first_middle = (int)end/3 
+    second_middle = (int)2*end/3
+
+    
+    guess = first_middle
+    while (end - beginning > 1):
+        if(is_this_smaller(guess) == False):
+            end = guess
+            first_middle = (int)end/3 
+            second_middle = (int)2*end/3
+        else:
+            guess = second_middle
+            if (is_this_smaller(guess) == False):
+                beginning = first_middle
+                end = guess
+                first_middle = (int)beginning + (end - beginning)/3
+                second_middle = (int)beginning + 2*(end - beginning)/3
+            else:
+                beginning = guess
+                first_middle = (int)beginning + (end - beginning)/3
+                second_middle = (int)beginning + 2*(end - beginning)/3
+
+    return end
 
 
         
