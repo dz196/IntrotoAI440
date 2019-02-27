@@ -1,0 +1,43 @@
+
+public class StringRec {
+
+	public static String decompress(String compressedText)
+	{
+		if ("".equals(compressedText))
+		{
+			return "";
+		}
+		if (compressedText.charAt(0)=='0')
+		{
+			return decompress(compressedText.substring(2));
+		}
+		else if (compressedText.charAt(0)=='1' ||
+				compressedText.charAt(0)=='2' || compressedText.charAt(0)=='3' ||
+				compressedText.charAt(0)=='4' || compressedText.charAt(0)=='5' ||
+				compressedText.charAt(0)=='6' || compressedText.charAt(0)=='7' ||
+				compressedText.charAt(0)=='8' || compressedText.charAt(0)=='9')
+		{
+			char n=compressedText.substring(0, 1).charAt(0);
+			n--;
+			String x=""+n;
+			System.out.println(x);
+			if ("0".equals(x))
+			{
+				return decompress(compressedText.substring(1));
+			}
+			else
+			{
+				return decompress(x+compressedText.charAt(1)+compressedText.substring(1));
+			}
+		}
+		else 
+		{
+			return compressedText.charAt(0)+decompress(compressedText.substring(1));
+		}
+		
+	}
+	public static void main(String [] args)
+	{
+		System.out.print(decompress("0a2c5b"));
+	}
+}

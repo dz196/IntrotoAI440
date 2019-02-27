@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\David Zhang\Documents\Homework\Senior\SoftwareMeth\ListView"/>
+		<item value="C:\Users\David Zhang\Documents\Homework\Senior\SoftwareMeth\F2C-MVC"/>
+		<item value="C:\Users\David Zhang\Documents\Homework\Sophomore\Data Structures\solitaire_project\Solitaire"/>
+		<item value="C:\Users\David Zhang\Documents\Milestone 4"/>
+		<item value="C:\Users\David Zhang\Documents\Milestone 4\C4Gui"/>
+	</list>
+	<section name="CleanDialogSettings">
+		<item value="828" key="DIALOG_WIDTH"/>
+		<item value="false" key="TOGGLE_SELECTED"/>
+		<item value="446" key="DIALOG_HEIGHT"/>
+		<item value="543" key="DIALOG_X_ORIGIN"/>
+		<item value="218" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="ExternalProjectImportWizard">
+		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
+			<item value="C:\Users\David Zhang\Documents\Homework\Sophomore\Data Structures\solitaire_project\Solitaire"/>
+			<item value="C:\Users\David Zhang\workspace\CS111\Project"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\David Zhang\Downloads\lse_project.zip"/>
+			<item value="C:\Users\David Zhang\Downloads\interval_project.zip"/>
+			<item value="C:\Users\David Zhang\Downloads\expression_project.zip"/>
+			<item value=""/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+	<section name="BasicNewProjectResourceWizard">
+	</section>
+</section>

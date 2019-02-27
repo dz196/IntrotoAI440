@@ -1,0 +1,34 @@
+
+public class StringRec {
+
+	public static String decompress(String compressedText)
+	{
+		if ("".equals(compressedText))
+		{
+			return "";
+		}
+		if (compressedText.charAt(0)=='0')
+		{
+			return ""+decompress(compressedText.substring(1));
+		}
+		if (compressedText.charAt(0)=='0' || compressedText.charAt(0)=='1' ||
+				compressedText.charAt(0)=='2' || compressedText.charAt(0)=='3' ||
+				compressedText.charAt(0)=='4' || compressedText.charAt(0)=='5' ||
+				compressedText.charAt(0)=='6' || compressedText.charAt(0)=='7' ||
+				compressedText.charAt(0)=='8' || compressedText.charAt(0)=='9')
+		{
+			char n=compressedText.charAt(0);
+			n--;
+			return compressedText.charAt(1)+decompress(compressedText);
+		}
+		else 
+		{
+			return compressedText.charAt(0)+decompress(compressedText.substring(1));
+		}
+		
+	}
+	public static void main(String [] args)
+	{
+		System.out.print(decompress("1a2b"));
+	}
+}

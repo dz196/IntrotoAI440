@@ -1,0 +1,9 @@
+package snippet;
+
+public class Snippet {
+	•	Implemented Python parser scripts that automated collection of data from Cisco and Juniper routers
+	•	Designed and built a basic call flow test environment that passed VoIP packets between PSTN to CPE and PSTN to PBX
+	•	Created dial-peers for TDM gateway call flows and documented the maximum/minimum call load, processing load, and results of different trials
+	
+}
+
